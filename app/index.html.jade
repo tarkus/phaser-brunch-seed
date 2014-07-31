@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description' content='Phaser on Brunch')
+
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black")
+
+    title #{title || 'Phaser on Brunch'}
+
+    link(rel='stylesheet' href='DIGEST(stylesheets/app.css)')
+
+    script(src='DIGEST(javascripts/vendor.js)')
+    script(src='DIGEST(javascripts/templates.js)')
+    script(src='DIGEST(javascripts/app.js)')
+
+    script(src='DIGEST(javascripts/bootstrap.js)')
+    script(src='DIGEST(javascripts/socket.js)')
+
+    script.
+      var config = require('config');
+      require('app');
+
+  body
+    #wrapper
+
